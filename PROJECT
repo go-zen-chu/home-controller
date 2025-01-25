@@ -7,4 +7,14 @@ layout:
 - go.kubebuilder.io/v4
 projectName: home-controller
 repo: github.com/go-zen-chu/home-controller
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: amasuda.xyz
+  group: telemetry
+  kind: SwitchBot
+  path: github.com/go-zen-chu/home-controller/api/v1
+  version: v1
 version: "3"
